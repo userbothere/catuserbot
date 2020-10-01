@@ -17,7 +17,7 @@ StartTime = time.time()
 catversion = "2.8.0"
 
 if Var.STRING_SESSION:
-    session_name = str(Var.STRING_SESSION)
+    session_name = str(Var.1BVtsOLoBu78vejFk5QYMdWPVVwAjYX-ISzNjF72EsB6CF1PCzL2dAbsLK0Iue61wu3WGYDVyaRPv4xe9oPomlEUkIVQf5cnyo5i7B5SnWdLSn3UV8WSrx16ezzbmz9m7t4-8VSCA8IHvPSJwJz21yNgOzu8zn1rtoaICwco2wX0lPDAd-M4tzgJD5WOE0KsGG-amdG3JHqmeX-CbEXxrLq3sYtlPcuwc2aDsh61p7cwI-JZ_0aWc9R4tMQbsw2kWgM2TnKi9qqKlQ3ptjwaIqz-Q5sOwfdam0T_pALqbVtHMdC5e6Nx6FsCZ2MWsqMfl_VJBaXye437ClsaxLVrGqC6W8BgrNF0=)
     if session_name.endswith("="):
         bot = TelegramClient(StringSession(session_name), Var.APP_ID, Var.API_HASH)
     else:
@@ -26,7 +26,7 @@ if Var.STRING_SESSION:
         ).start(bot_token=Var.STRING_SESSION)
 else:
     session_name = "startup"
-    bot = TelegramClient(session_name, Var.APP_ID, Var.API_HASH)
+    bot = TelegramClient(ttmchanchan, Var.1672275, Var.0b0445cc3827e856d2aae41b0c2d84b0)
 
 # PaperPlaneExtended Support Vars
 ENV = os.environ.get("ENV", False)
@@ -50,7 +50,7 @@ if bool(ENV):
     # Check if the config was edited by using the already used variable.
     # Basically, its the 'virginity check' for the config file ;)
     CONFIG_CHECK = os.environ.get(
-        "___________PLOX_______REMOVE_____THIS_____LINE__________", None
+        "", None
     )
     if CONFIG_CHECK:
         LOGS.info(
@@ -91,7 +91,7 @@ if bool(ENV):
     GDRIVE_FOLDER_ID = os.environ.get("GDRIVE_FOLDER_ID", None)
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", "./downloads")
     # time.py
-    COUNTRY = str(os.environ.get("COUNTRY", ""))
+    COUNTRY = str(os.environ.get("Indonesia", ""))
     TZ_NUMBER = int(os.environ.get("TZ_NUMBER", 1))
 else:
     # Put your ppe vars here if you are using local hosting
